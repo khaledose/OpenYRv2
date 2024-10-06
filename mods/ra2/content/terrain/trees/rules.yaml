@@ -1,0 +1,142 @@
+^CoreTree:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^CoreSprite
+	Inherits@3: ^1x1Shape
+	Interactable:
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	Health:
+		HP: 5000
+	Armor:
+		Type: Wood
+	Building:
+		TerrainTypes: Clear, Rough
+	Tooltip:
+		Name: meta-tree-name
+	Targetable:
+		TargetTypes: Ground, Tree
+	Crushable:
+		CrushClasses: tree
+		CrushSound: gsancrua.wav
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	RadarColorFromTerrain:
+		Terrain: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	MapEditorData:
+		Categories: Trees
+		ExcludeTilesets: LUNAR
+
+tree01:
+	Inherits: ^CoreTree
+
+tree02:
+	Inherits: ^CoreTree
+
+tree03:
+	Inherits: ^CoreTree
+
+tree04:
+	Inherits: ^CoreTree
+
+tree05:
+	Inherits: ^CoreTree
+
+tree06:
+	Inherits: ^CoreTree
+
+tree07:
+	Inherits: ^CoreTree
+
+tree08:
+	Inherits: ^CoreTree
+
+tree09:
+	Inherits: ^CoreTree
+
+tree10:
+	Inherits: ^CoreTree
+
+tree11:
+	Inherits: ^CoreTree
+
+tree12:
+	Inherits: ^CoreTree
+
+tree13:
+	Inherits: ^CoreTree
+
+tree14:
+	Inherits: ^CoreTree
+
+tree15:
+	Inherits: ^CoreTree
+
+tree16:
+	Inherits: ^CoreTree
+
+tree17:
+	Inherits: ^CoreTree
+
+tree18:
+	Inherits: ^CoreTree
+
+tree19:
+	Inherits: ^CoreTree
+
+tree20:
+	Inherits: ^CoreTree
+
+tree21:
+	Inherits: ^CoreTree
+
+tree22:
+	Inherits: ^CoreTree
+
+tree23:
+	Inherits: ^CoreTree
+
+tree24:
+	Inherits: ^CoreTree
+
+tree25:
+	Inherits: ^CoreTree
+
+tree26:
+	Inherits: ^CoreTree
+
+tree27:
+	Inherits: ^CoreTree
+
+tree28:
+	Inherits: ^CoreTree
+
+tree29:
+	Inherits: ^CoreTree
+	MapEditorData:
+		RequireTilesets: DESERT, NEWURBAN
+
+tree30:
+	Inherits: tree29
+
+tree31:
+	Inherits: tree29
+
+tree32:
+	Inherits: tree29
+
+tree33:
+	Inherits: tree29
+
+tree34:
+	Inherits: tree29
+
+tree35:
+	Inherits: tree29
+
+tree36:
+	Inherits: tree29

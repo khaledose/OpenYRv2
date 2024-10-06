@@ -1,0 +1,55 @@
+^DeathEffects:
+	die4:
+		Filename: nukedie.shp
+		TilesetFilenames:
+			SNOW: nukedie.shp
+		Length: *
+		Tick: 50
+	die5:
+		Filename: yuridie.shp
+		TilesetFilenames:
+			SNOW: yuridie.shp
+		Length: *
+		Tick: 80
+	die6:
+		Filename: electro.shp
+		TilesetFilenames:
+			SNOW: electro.shp
+		Length: *
+		Tick: 80
+	die7:
+		Filename: virusd.shp
+		TilesetFilenames:
+			SNOW: virusd.shp
+		Length: *
+		Tick: 80
+	die8:
+		Filename: brutdie.shp
+		TilesetFilenames:
+			SNOW: brutdie.shp
+		Length: *
+		Tick: 80
+	die9:
+		Filename: gendeath.shp
+		TilesetFilenames:
+			SNOW: gendeath.shp
+		Length: *
+		Tick: 80
+
+corpse:
+	Defaults:
+		Length: *
+		ZOffset: -512
+		Tick: 2500
+	death_a:
+		Filename: death_a.shp
+	death_b:
+		Filename: death_b.shp
+	death_c:
+		Filename: death_c.shp
+	death_d:
+		Filename: death_d.shp
+	death_e:
+		Filename: death_e.shp
+	death_f:
+		Filename: death_f.shp

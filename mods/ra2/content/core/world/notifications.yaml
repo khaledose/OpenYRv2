@@ -1,0 +1,10 @@
+Speech:
+	Notifications:
+		StartGame: 120
+		OneMinuteRemaining: 00-i134
+		TwoMinutesRemaining: 032
+		ThreeMinutesRemaining: 031
+		FourMinutesRemaining: 030
+		FiveMinutesRemaining: 029
+		TenMinutesRemaining: 028
+		TwentyMinutesRemaining: 027

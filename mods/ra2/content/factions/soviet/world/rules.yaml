@@ -1,0 +1,45 @@
+^CoreWorld:
+	Faction@soviets:
+		Name: faction-random-soviets.name
+		InternalName: random-soviets
+		RandomFactionMembers: russia, iraq, cuba, libya
+		Side: Randoms
+		Description: faction-random-soviets.description
+	Faction@russia:
+		Name: faction-russia.name
+		InternalName: russia
+		Side: Soviets
+		Description: faction-russia.description
+	Faction@iraq:
+		Name: faction-iraq.name
+		InternalName: iraq
+		Side: Soviets
+		Description: faction-iraq.description
+	Faction@cuba:
+		Name: faction-cuba.name
+		InternalName: cuba
+		Side: Soviets
+		Description: faction-cuba.description
+	Faction@libya:
+		Name: faction-libya.name
+		InternalName: libya
+		Side: Soviets
+		Description: faction-libya.description
+
+World:
+	StartingUnits@smcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: russia, iraq, cuba, libya
+		BaseActor: smcv
+		BaseActorFacing: 640
+	StartingUnits@unholysmcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: russia, iraq, cuba, libya
+		BaseActor: smcv
+		BaseActorFacing: 640
+		SupportActors: amcv, pcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5

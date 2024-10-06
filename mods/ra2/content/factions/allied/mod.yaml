@@ -1,0 +1,28 @@
+Rules:
+	ra2|content/factions/allied/actors/infantries/e1/rules.yaml
+	ra2|content/factions/allied/actors/infantries/ggi/rules.yaml
+	ra2|content/factions/allied/actors/vehicles/amcv/rules.yaml
+	ra2|content/factions/allied/world/rules.yaml
+
+Sequences:
+	ra2|content/factions/allied/actors/infantries/e1/sequences.yaml
+	ra2|content/factions/allied/actors/infantries/ggi/sequences.yaml
+	ra2|content/factions/allied/actors/vehicles/amcv/sequences.yaml
+
+ModelSequences:
+	ra2|content/factions/allied/actors/vehicles/amcv/voxels.yaml
+
+Weapons:
+	ra2|content/factions/allied/actors/infantries/e1/weapons.yaml
+	ra2|content/factions/allied/actors/infantries/ggi/weapons.yaml
+
+Voices:
+	ra2|content/factions/allied/actors/infantries/e1/voices.yaml
+	ra2|content/factions/allied/actors/infantries/ggi/voices.yaml
+	ra2|content/factions/allied/actors/vehicles/amcv/voices.yaml
+
+Translations:
+	ra2|content/factions/allied/actors/infantries/e1/languages/en.ftl
+	ra2|content/factions/allied/actors/infantries/ggi/languages/en.ftl
+	ra2|content/factions/allied/world/languages/en.ftl
+

@@ -1,0 +1,27 @@
+Rules:
+	ra2|content/factions/yuri/actors/infantries/init/rules.yaml
+	ra2|content/factions/yuri/actors/infantries/slav/rules.yaml
+	ra2|content/factions/yuri/actors/vehicles/pcv/rules.yaml
+	ra2|content/factions/yuri/world/rules.yaml
+
+Sequences:
+	ra2|content/factions/yuri/actors/infantries/init/sequences.yaml
+	ra2|content/factions/yuri/actors/infantries/slav/sequences.yaml
+	ra2|content/factions/yuri/actors/vehicles/pcv/sequences.yaml
+
+ModelSequences:
+	ra2|content/factions/yuri/actors/vehicles/pcv/voxels.yaml
+
+Weapons:
+	ra2|content/factions/yuri/actors/infantries/init/weapons.yaml
+	ra2|content/factions/yuri/actors/infantries/slav/weapons.yaml
+
+Voices:
+	ra2|content/factions/yuri/actors/infantries/init/voices.yaml
+	ra2|content/factions/yuri/actors/infantries/slav/voices.yaml
+	ra2|content/factions/yuri/actors/vehicles/pcv/voices.yaml
+
+Translations:
+	ra2|content/factions/yuri/actors/infantries/init/languages/en.ftl
+	ra2|content/factions/yuri/actors/infantries/slav/languages/en.ftl
+	ra2|content/factions/yuri/world/languages/en.ftl

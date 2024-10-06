@@ -1,0 +1,283 @@
+^StreetProp:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 1
+
+lt_gen01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_gen01.tem
+		TilesetFilenames:
+			SNOW: lt_gen01.sno
+			URBAN: lt_gen01.urb
+			NEWURBAN: lt_gen01.ubn
+			DESERT: lt_gen01.des
+			LUNAR: lt_gen01.lun
+
+lt_gen02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_gen02.tem
+		TilesetFilenames:
+			SNOW: lt_gen02.sno
+			URBAN: lt_gen02.urb
+			NEWURBAN: lt_gen02.ubn
+			DESERT: lt_gen02.des
+			LUNAR: lt_gen02.lun
+
+lt_gen03:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_gen03.tem
+		TilesetFilenames:
+			SNOW: lt_gen03.sno
+			URBAN: lt_gen03.urb
+			NEWURBAN: lt_gen03.ubn
+			DESERT: lt_gen03.des
+			LUNAR: lt_gen03.lun
+
+lt_gen04:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_gen04.tem
+		TilesetFilenames:
+			SNOW: lt_gen04.sno
+			URBAN: lt_gen04.urb
+			NEWURBAN: lt_gen04.ubn
+			DESERT: lt_gen04.des
+			LUNAR: lt_gen04.lun
+
+lt_sgn01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_sgn01.tem
+		TilesetFilenames:
+			SNOW: lt_sgn01.sno
+			URBAN: lt_sgn01.urb
+			NEWURBAN: lt_sgn01.ubn
+			DESERT: lt_sgn01.des
+			LUNAR: lt_sgn01.lun
+
+lt_sgn02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_sgn02.tem
+		TilesetFilenames:
+			SNOW: lt_sgn02.sno
+			URBAN: lt_sgn02.urb
+			NEWURBAN: lt_sgn02.ubn
+			DESERT: lt_sgn02.des
+			LUNAR: lt_sgn02.lun
+
+lt_sgn03:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_sgn03.tem
+		TilesetFilenames:
+			SNOW: lt_sgn03.sno
+			URBAN: lt_sgn03.urb
+			NEWURBAN: lt_sgn03.ubn
+			DESERT: lt_sgn03.des
+			LUNAR: lt_sgn03.lun
+
+lt_sgn04:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_sgn04.tem
+		TilesetFilenames:
+			SNOW: lt_sgn04.sno
+			URBAN: lt_sgn04.urb
+			NEWURBAN: lt_sgn04.ubn
+			DESERT: lt_sgn04.des
+			LUNAR: lt_sgn04.lun
+
+lt_eur01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_eur01.tem
+		TilesetFilenames:
+			SNOW: lt_eur01.sno
+			URBAN: lt_eur01.urb
+			NEWURBAN: lt_eur01.ubn
+			DESERT: lt_eur01.des
+			LUNAR: lt_eur01.lun
+
+lt_eur02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: lt_eur02.tem
+		TilesetFilenames:
+			SNOW: lt_eur02.sno
+			URBAN: lt_eur02.urb
+			NEWURBAN: lt_eur02.ubn
+			DESERT: lt_eur02.des
+			LUNAR: lt_eur02.lun
+
+pole01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: pole01.tem
+		TilesetFilenames:
+			SNOW: pole01.sno
+			URBAN: pole01.urb
+			NEWURBAN: pole01.ubn
+			DESERT: pole01.des
+			LUNAR: pole01.lun
+
+pole02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: pole02.tem
+		TilesetFilenames:
+			SNOW: pole02.sno
+			URBAN: pole02.urb
+			NEWURBAN: pole02.ubn
+			DESERT: pole02.des
+			LUNAR: pole02.lun
+
+sign01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign01.tem
+		TilesetFilenames:
+			SNOW: sign01.sno
+			URBAN: sign01.urb
+			NEWURBAN: sign01.ubn
+			DESERT: sign01.des
+			LUNAR: sign01.lun
+
+sign02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign02.tem
+		TilesetFilenames:
+			SNOW: sign02.sno
+			URBAN: sign02.urb
+			NEWURBAN: sign02.ubn
+			DESERT: sign02.des
+			LUNAR: sign02.lun
+
+sign03:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign03.tem
+		TilesetFilenames:
+			SNOW: sign03.sno
+			URBAN: sign03.urb
+			NEWURBAN: sign03.ubn
+			DESERT: sign03.des
+			LUNAR: sign03.lun
+
+sign04:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign04.tem
+		TilesetFilenames:
+			SNOW: sign04.sno
+			URBAN: sign04.urb
+			NEWURBAN: sign04.ubn
+			DESERT: sign04.des
+			LUNAR: sign04.lun
+
+sign05:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign05.tem
+		TilesetFilenames:
+			SNOW: sign05.sno
+			URBAN: sign05.urb
+			NEWURBAN: sign05.ubn
+			DESERT: sign05.des
+			LUNAR: sign05.lun
+
+sign06:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: sign06.tem
+		TilesetFilenames:
+			SNOW: sign06.sno
+			URBAN: sign06.urb
+			NEWURBAN: sign06.ubn
+			DESERT: sign06.des
+			LUNAR: sign06.lun
+
+trff01:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: trff01.tem
+		TilesetFilenames:
+			SNOW: trff01.sno
+			URBAN: trff01.urb
+			NEWURBAN: trff01.ubn
+			DESERT: trff01.des
+			LUNAR: trff01.lun
+
+trff02:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: trff02.tem
+		TilesetFilenames:
+			SNOW: trff02.sno
+			URBAN: trff02.urb
+			NEWURBAN: trff02.ubn
+			DESERT: trff02.des
+			LUNAR: trff02.lun
+
+trff03:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: trff03.tem
+		TilesetFilenames:
+			SNOW: trff03.sno
+			URBAN: trff03.urb
+			NEWURBAN: trff03.ubn
+			DESERT: trff03.des
+			LUNAR: trff03.lun
+
+trff04:
+	Inherits: ^StreetProp
+	Defaults:
+		Filename: trff04.tem
+		TilesetFilenames:
+			SNOW: trff04.sno
+			URBAN: trff04.urb
+			NEWURBAN: trff04.ubn
+			DESERT: trff04.des
+			LUNAR: trff04.lun
+
+castrt01:
+	Inherits: ^Prop
+	idle:
+		Filename: ctstrt01.shp
+		TilesetFilenames:
+			SNOW: castrt01.shp
+			URBAN: custrt01.shp
+			NEWURBAN: cnstrt01.shp
+			DESERT: cdstrt01.shp
+			LUNAR: clstrt01.shp
+
+castrt02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt02.shp
+
+castrt03:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt03.shp
+
+castrt04:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt04.shp
+
+castrt05:
+	Inherits: ^Prop
+	idle:
+		Filename: ctstrt05.shp
+		TilesetFilenames:
+			SNOW: castrt05.shp
+			URBAN: custrt05.shp
+			NEWURBAN: cnstrt05.shp
+			DESERT: cdstrt05.shp
+			LUNAR: clstrt05.shp

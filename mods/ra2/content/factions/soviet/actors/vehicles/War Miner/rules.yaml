@@ -1,0 +1,29 @@
+harv:
+	Inherits: ^MinerVehicle
+	Inherits@TURRET: ^HasTurret
+	Inherits@EXPERIENCE: ^Promotable
+	Buildable:
+		Description: actor-harv.description
+	VeterancyOnProduction:
+		InitialRank: 2
+	StoresResources:
+		Capacity: 40
+	Tooltip:
+		Name: actor-harv.name
+	Tooltip@NoRow:
+		Name: actor-harv.name
+	Armament@primary:
+		Weapon: 20mmRapid
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: 20mmrapidE
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
+		RequiresCondition: rank-elite
+	Turreted:
+		Offset: 196,0,-24
+	WithMuzzleOverlay:
+	Voiced:
+		VoiceSet: WarMinerVoice

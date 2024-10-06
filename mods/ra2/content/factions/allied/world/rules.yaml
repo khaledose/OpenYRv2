@@ -1,0 +1,50 @@
+^CoreWorld:
+	Faction@allies:
+		Name: faction-random-allies.name
+		InternalName: random-allies
+		RandomFactionMembers: america, england, france, germany, korea
+		Side: Randoms
+		Description: faction-random-allies.description
+	Faction@usa:
+		Name: faction-america.name
+		InternalName: america
+		Side: Allies
+		Description: faction-america.description
+	Faction@uk:
+		Name: faction-england.name
+		InternalName: england
+		Side: Allies
+		Description: faction-england.description
+	Faction@france:
+		Name: faction-france.name
+		InternalName: france
+		Side: Allies
+		Description: faction-france.description
+	Faction@germany:
+		Name: faction-germany.name
+		InternalName: germany
+		Side: Allies
+		Description: faction-germany.description
+	Faction@korea:
+		Name: faction-korea.name
+		InternalName: korea
+		Side: Allies
+		Description: faction-korea.description
+
+World:
+	StartingUnits@amcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: america, england, france, germany, korea
+		BaseActor: amcv
+		BaseActorFacing: 640
+	StartingUnits@unholyamcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: america, england, france, germany, korea
+		BaseActor: amcv
+		BaseActorFacing: 640
+		SupportActors: smcv, pcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5

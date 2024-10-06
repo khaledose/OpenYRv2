@@ -1,0 +1,17 @@
+Speech:
+	DefaultVariant: .wav
+	Prefixes:
+		america: ceva
+		korea: ceva
+		france: ceva
+		germany: ceva
+		england: ceva
+		libya: csof
+		cuba: csof
+		iraq: csof
+		russia: csof
+		psicorps: cyur
+		DisablePrefixes: BaseAttackWarning, MyTruckIsLoaded, KirovReporting, DiscInFlight, LetsRockAndRoll, BorisHasArrived, TheresOnlyOneTrueYuri, ForSovietGlory
+
+Sounds:
+	DefaultVariant: .wav

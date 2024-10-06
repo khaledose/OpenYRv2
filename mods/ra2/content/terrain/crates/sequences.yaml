@@ -1,0 +1,45 @@
+crate:
+	Defaults:
+		Filename: crate.tem
+		TilesetFilenames:
+			SNOW: crate.sno
+			URBAN: crate.urb
+			NEWURBAN: crate.ubn
+			DESERT: crate.des
+			LUNAR: crate.lun
+		Offset: 0, -15
+		ShadowStart: 1
+	idle:
+	land:
+	water:
+		Filename: wcrate.tem
+		TilesetFilenames:
+			SNOW: wcrate.sno
+			URBAN: wcrate.urb
+			NEWURBAN: wcrate.ubn
+			DESERT: wcrate.des
+			LUNAR: wcrate.lun
+
+crate-effects:
+	Defaults:
+		Length: *
+		Tick: 80
+		Offset: 0, 0, 96
+	dollar:
+		Filename: conquer|money.shp
+	reveal-map:
+		Filename: conquer|reveal.shp
+	hide-map:
+		Filename: conquer|shroudx.shp
+	fpower:
+		Filename: conquer|firepowr.shp
+	armor:
+		Filename: conquer|armor.shp
+	heal:
+		Filename: conquer|healall.shp
+	nuke:
+		Filename: conquer|mltimisl.shp
+	levelup:
+		Filename: conquer|veteran.shp
+	speed:
+		Filename: conquer|speed.shp

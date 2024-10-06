@@ -1,0 +1,6 @@
+amcv:
+	Inherits: ^CoreMCV
+	# Transforms:
+	# 	IntoActor: gacnst
+	Voiced:
+		VoiceSet: AlliedConstructionVehicleVoice

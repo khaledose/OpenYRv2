@@ -1,0 +1,31 @@
+mpspawn:
+	idle:
+		Filename: mpspawn.shp
+		Length: *
+
+waypoint:
+	idle:
+		Filename: waypoint.shp
+		Length: *
+
+clock:
+	idle:
+		Filename: clock.shp
+		Length: *
+		BlendMode: Multiply
+
+flameguy:
+	Defaults:
+		Filename: conquer|flameguy.shp
+		Facings: 8
+		Tick: 80
+		IgnoreWorldTint: true
+	idle:
+	stand:
+	run:
+	panic-run:
+		Length: 6
+	die:
+		Start: 44
+		Facings: 1
+		Length: 104

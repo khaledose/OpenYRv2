@@ -1,0 +1,45 @@
+ammocrat:
+	Inherits: camisc01
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-ammocrat.name
+
+camisc01:
+	Inherits: ^CoreDecoration
+	Health:
+		HP: 500
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc01.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	FireWarheadsOnDeath:
+		Weapon: LargeBarrelExplosion
+		EmptyWeapon: LargeBarrelExplosion
+
+camisc02:
+	Inherits: camisc01
+	Tooltip:
+		Name: actor-camisc02.name
+	FireWarheadsOnDeath:
+		Weapon: SmallBarrelExplosion
+		EmptyWeapon: SmallBarrelExplosion
+
+camisc06:
+	Inherits: ^CoreDecoration
+	Inherits@shape: ^2x1Shape
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc06.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	FireWarheadsOnDeath:
+		Weapon: MiniNukeExplosion
+		EmptyWeapon: MiniNukeExplosion

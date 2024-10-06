@@ -1,0 +1,310 @@
+cow:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conquer|cow.shp
+	stand:
+		Facings: 8
+		ShadowStart: 116
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+		ShadowStart: 124
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+		ShadowStart: 172
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+		ShadowStart: 187
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+		ShadowStart: 202
+	die2:
+		Start: 101
+		Length: 15
+		ShadowStart: 202
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+all:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conquer|all.shp
+	stand:
+		Facings: 8
+		ShadowStart: 164
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+		ShadowStart: 172
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+		ShadowStart: 220
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+		ShadowStart: 235
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+		ShadowStart: 250
+	die2:
+		Start: 101
+		Length: 15
+		ShadowStart: 265
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+		ShadowStart: 280
+
+polarb:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conquer|polarb.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+josh:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conquer|josh.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+caml:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conqmd|caml.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+dnoa:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conqmd|dnoa.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 13
+		Facings: 8
+
+dnob:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conqmd|dnob.shp
+	stand:
+		Facings: 8
+		Start: 0
+		Length: 6
+	run:
+		Start: 48
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 96
+		Length: 40
+		Tick: 120
+	idle2:
+		Start: 136
+		Length: 40
+		Tick: 120
+	cheer:
+		Length: 8
+	paradrop:
+		Length: 1
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+	die1:
+		Start: 176
+		Length: 40
+	die2:
+		Start: 216
+		Length: 35
+
+^Dog:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 164
+	paradrop:
+		Length: 1
+		Start: 11
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+adog:
+	Inherits: ^Dog
+	Defaults:
+		Filename: conquer|adog.shp
+	icon:
+		Filename: cameo|adogicon.shp
+
+sdog:
+	Inherits: ^Dog
+	Defaults:
+		Filename: conquer|adog.shp
+	icon:
+		Filename: cameo|adogicon.shp

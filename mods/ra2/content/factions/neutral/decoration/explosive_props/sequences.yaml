@@ -1,0 +1,38 @@
+ammocrat:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ammo01.shp
+
+camisc01:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc01.shp
+		TilesetFilenames:
+			SNOW: camisc01.shp
+			URBAN: cumisc01.shp
+			NEWURBAN: cnmisc01.shp
+			DESERT: cdmisc01.shp
+			LUNAR: clmisc01.shp
+
+camisc02:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc02.shp
+		TilesetFilenames:
+			SNOW: camisc02.shp
+			URBAN: cumisc02.shp
+			NEWURBAN: cnmisc02.shp
+			DESERT: cdmisc02.shp
+			LUNAR: clmisc02.shp
+
+camisc06:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctmisc06.shp
+		TilesetFilenames:
+			SNOW: camisc06.shp
+			URBAN: cumisc06.shp
+			NEWURBAN: cnmisc06.shp
+			DESERT: cdmisc06.shp
+			LUNAR: clmisc06.shp
+		Offset: -15,-22

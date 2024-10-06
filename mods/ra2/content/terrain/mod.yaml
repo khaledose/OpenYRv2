@@ -1,0 +1,33 @@
+TileSets:
+	ra2|content/terrain/tilesets/temperat.yaml
+	ra2|content/terrain/tilesets/snow.yaml
+	ra2|content/terrain/tilesets/urban.yaml
+	ra2|content/terrain/tilesets/newurban.yaml
+	ra2|content/terrain/tilesets/desert.yaml
+	ra2|content/terrain/tilesets/lunar.yaml
+
+Rules:
+# 	ra2|content/terrain/bridges/rules.yaml
+	ra2|content/terrain/crates/rules.yaml
+	ra2|content/terrain/drills/rules.yaml
+# 	ra2|content/terrain/flags/rules.yaml
+# 	ra2|content/terrain/lights/rules.yaml
+# 	ra2|content/terrain/palettes/rules.yaml
+	ra2|content/terrain/rocks/rules.yaml
+	ra2|content/terrain/trees/rules.yaml
+
+Sequences:
+# 	ra2|content/terrain/bridges/sequences.yaml
+	ra2|content/terrain/crates/sequences.yaml
+	ra2|content/terrain/drills/sequences.yaml
+# 	ra2|content/terrain/flags/sequences.yaml
+# 	ra2|content/terrain/lights/sequences.yaml
+# 	ra2|content/terrain/palettes/sequences.yaml
+	ra2|content/terrain/rocks/sequences.yaml
+	ra2|content/terrain/trees/sequences.yaml
+
+Notifications:
+	ra2|content/terrain/crates/notifications.yaml
+
+Translations:
+	ra2|content/terrain/languages/en.ftl

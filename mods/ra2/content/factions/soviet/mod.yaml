@@ -1,0 +1,22 @@
+Rules:
+	ra2|content/factions/soviet/actors/infantries/e2/rules.yaml
+	ra2|content/factions/soviet/actors/vehicles/smcv/rules.yaml
+	ra2|content/factions/soviet/world/rules.yaml
+
+Sequences:
+	ra2|content/factions/soviet/actors/infantries/e2/sequences.yaml
+	ra2|content/factions/soviet/actors/vehicles/smcv/sequences.yaml
+
+ModelSequences:
+	ra2|content/factions/soviet/actors/vehicles/smcv/voxels.yaml
+
+Weapons:
+	ra2|content/factions/soviet/actors/infantries/e2/weapons.yaml
+
+Voices:
+	ra2|content/factions/soviet/actors/infantries/e2/voices.yaml
+	ra2|content/factions/soviet/actors/vehicles/smcv/voices.yaml
+
+Translations:
+	ra2|content/factions/soviet/actors/infantries/e2/languages/en.ftl
+	ra2|content/factions/soviet/world/languages/en.ftl

@@ -1,0 +1,119 @@
+# Base for all vehicle actors.
+^CoreVehicle:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreVoxel
+	Inherits@3: ^RepairedByMechanic
+	# Vehicles can kill infantry by moving over them and set movement modifiers.
+	Mobile:
+		Locomotor: wheeled
+		TerrainOrientationAdjustmentMargin: 256
+		Voice: Move
+	# This actor explodes when killed.
+	FireWarheadsOnDeath:
+		Weapon: VehicleExplosion
+		EmptyWeapon: VehicleExplosion
+	# Vehicles can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground, Vehicle
+	# Condition to be granted to damaged vehicles.
+	GrantConditionOnDamageState:
+		Condition: heavy-damage
+		ValidDamageStates: Heavy, Critical
+	# Vehicles are 25% slower when they are heavily damaged.
+	SpeedMultiplier:
+		Modifier: 75
+		RequiresCondition: heavy-damage
+	# Vehicles smoke when they are heavily damaged.
+	FloatingSpriteEmitter:
+		Image: smoke
+		Sequences: small, large
+		Duration: -1
+		SpawnFrequency: 1
+		Lifetime: 10
+		RandomRate: 100
+		Gravity: 256
+		Offset: 0, 0, 1c0
+		RequiresCondition: heavy-damage
+	# Vehicle category in editor.
+	MapEditorData:
+		Categories: Unit - Vehicle
+
+# Base for all MCUs.
+^CoreMCV:
+	Inherits: ^CoreVehicle
+	Selectable:
+		Priority: 15
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 100000
+	Armor:
+		Type: Heavy
+	Valued:
+		Cost: 3000
+	DeliversCash:
+		Payload: 3000
+	Mobile:
+		Speed: 60
+		TurnSpeed: 20
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: meta-constructionvehicle.name
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	WithVoxelBody:
+	# Unit category in editor.
+	MapEditorData:
+		Categories: Unit - MCV
+
+# Add locomotor to world...
+^CoreWorld:
+	Locomotor@WHEELED:
+		Name: wheeled
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+
+# Vehicles are repaired overtime when mechanic is captured.
+^RepairedByMechanic:
+	# Vehicle repairs self overtime.
+	ChangesHealth@mechanic:
+		PercentageStep: 1
+		Delay: 100
+		StartIfBelow: 100
+		RequiresCondition: repair
+	# Displays a decoration to indicate that vehicle is being repaired.
+	WithDecoration@mechanic:
+		Image: bonus-pips
+		Sequence: repair
+		Palette: pips
+		Position: TopRight
+		ValidRelationships: Ally
+		RequiresCondition: repair
+	# Condition to be granted when mechanic is captured.
+	GrantConditionOnPrerequisite@mechanic:
+		Condition: repair
+		Prerequisites: mechanic
+
+# Vehicle can only transport infantries.
+^TransportsInfantries:
+	Inherits: ^Transportation
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+
+# Vehicle can transport any ground unit.
+^TransportsGround:
+	Inherits: ^Transportation
+	Cargo:
+		Types: Infantry, Vehicle
+		MaxWeight: 12

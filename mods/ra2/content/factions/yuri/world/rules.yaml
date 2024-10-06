@@ -1,0 +1,24 @@
+^CoreWorld:
+	Faction@yuri:
+		Name: faction-yuri.name
+		InternalName: psicorps
+		Side: Randoms
+		Description: faction-yuri.description
+
+World:
+	StartingUnits@pcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: psicorps
+		BaseActor: pcv
+		BaseActorFacing: 640
+	StartingUnits@unholypcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: psicorps
+		BaseActor: pcv
+		BaseActorFacing: 640
+		SupportActors: amcv, smcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5

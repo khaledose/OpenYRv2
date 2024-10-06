@@ -1,0 +1,67 @@
+ggi:
+	Inherits: ^DeathEffects
+	Defaults:
+		Filename: conqmd|ggi.shp
+	icon:
+		Filename: cameomd|gdgiicon.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 196
+	paradrop:
+		Length: 1
+		Start: 371
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	shoot:
+		Start: 204
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 164
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 182
+		Length: 2
+		Facings: 2
+	prone-shoot:
+		Start: 252
+		Length: 6
+		Facings: 8
+	deploy:
+		Start: 300
+		Length: 15
+	deployed:
+		Start: 315
+		Length: 1
+		Facings: 8
+	deployed-shoot:
+		Start: 323
+		Length: 6
+		Facings: 8

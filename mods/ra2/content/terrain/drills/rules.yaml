@@ -1,0 +1,37 @@
+^CoreDrill:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^CoreSprite
+	Interactable:
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+		AllowPlacementOnResources: true
+		TerrainTypes: Clear, Rough, Road, DirtRoad
+	Tooltip:
+		Name: meta-oredrill-name
+	SeedsResource:
+		ResourceType: Ore
+		Interval: 50
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	WithIdleAnimation:
+		Interval: 50
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Ore
+	AppearsOnMapPreview:
+		Terrain: Ore
+	MapEditorData:
+		Categories: Drills
+
+TIBTRE01:
+	Inherits: ^CoreDrill
+
+TIBTRE02:
+	Inherits: ^CoreDrill
+
+TIBTRE03:
+	Inherits: ^CoreDrill

@@ -1,0 +1,267 @@
+^Civilian:
+	Health:
+		HP: 5000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: meta-civilianinfantry.name
+
+civ1:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+
+civ2:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civ3:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civbbp:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civbfm:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civbf:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+
+civbtm:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civsfm:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianSovietMaleVoice
+
+civstm:
+	Inherits: civsfm
+
+civsf:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Voiced:
+		VoiceSet: CivilianSovietFemaleVoice
+
+civa:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	Inherits@3: ^CoreArmedInfantry
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: CivilianTexanVoice
+
+civb:
+	Inherits: civa
+
+civc:
+	Inherits: civa
+
+vladimir:
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^Civilian
+	DeliversCash:
+		Payload: 200
+	Tooltip:
+		Name: actor-vladimir.name
+	Armament:
+		Weapon: Pistola
+
+pentgen:
+	Inherits: vladimir
+	Tooltip:
+		Name: actor-pentgen.name
+	WithInfantryBody:
+		IdleSequences: idle1
+	Voiced:
+		VoiceSet: GIVoice
+
+ssrv:
+	Inherits: pentgen
+	Tooltip:
+		Name: actor-ssrv.name
+	Voiced:
+		VoiceSet: SecretServiceVoice
+
+pres:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	DeliversCash:
+		Payload: 2000
+	Tooltip:
+		Name: actor-pres.name
+
+# Yuri's Revenge Civilians
+rmnv:
+	Inherits@1: ^CorePerson
+	Inherits@2: ^Civilian
+	Tooltip:
+		Name: actor-rmnv.name
+	WithInfantryBody:
+		IdleSequences: idle1
+	Voiced:
+		VoiceSet: RomanovVoice
+
+eins:
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
+	DeliversCash:
+		Payload: 200
+	Tooltip:
+		Name: actor-eins.name
+	Voiced:
+		VoiceSet: EinsteinVoice
+
+mumy:
+	Inherits@1: ^CorePerson
+	Inherits@2: ^CoreArmedInfantry
+	Inherits@3: ^SelfHealed
+	Health:
+		HP: 40000
+	Armor:
+		Type: Plate
+	Valued:
+		Cost: 100
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 45
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-mumy.name
+	Voiced:
+		VoiceSet: MummyVoice
+
+arnd:
+	Inherits: ^CoreSoldier
+	Health:
+		HP: 20000
+	Armor:
+		Type: Plate
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 90
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-arnd.name
+	Armament:
+		Weapon: TermiGun
+	Voiced:
+		VoiceSet: ArnoldVoice
+
+stln:
+	Inherits: ^CoreSoldier
+	Health:
+		HP: 20000
+	Armor:
+		Type: Plate
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 90
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-stln.name
+	Armament@primary:
+		Weapon: StalGun
+	Armament@secondary:
+		Weapon: StalGren
+	Voiced:
+		VoiceSet: StallionVoice
+
+lunr:
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
+	Health:
+		HP: 12500
+	Armor:
+		Type: None
+	Mobile:
+		Speed: 60
+	Valued:
+		Cost: 600
+	DeliversCash:
+		Payload: 300
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-lunr.name
+	Armament:
+		Weapon: LunarLaser
+		LocalOffset: 128,196,512, 128,-196,512
+	Voiced:
+		VoiceSet: CosmonautVoice
+	-TakeCover:
+	-GrantConditionOnVeterancyLevel:
+
+engineer:
+	Inherits@1: ^CorePerson
+	Inherits@2: ^FeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry, ~techlevel.1
+		Description: meta-engineer.description
+		BuildPaletteOrder: 20
+	Health:
+		HP: 7500
+	Armor:
+		Type: None
+	Valued:
+		Cost: 500
+	DeliversCash:
+		Payload: 250
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: meta-engineer.name
+	InstantlyRepairs:
+		Types: building
+		RepairSound: urepair.wav
+		ValidRelationships: Ally, Neutral
+	RepairsBridges:
+		RepairNotification: BridgeRepaired
+	CaptureManager:
+	Captures:
+		CaptureTypes: building, tech
+	Voiced:
+		VoiceSet: EngineerVoice

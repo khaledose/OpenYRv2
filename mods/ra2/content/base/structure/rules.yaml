@@ -1,0 +1,33 @@
+# Map indestructible decoration actors.
+^CoreIndestructible:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^CoreSprite
+	# Decorations are interactable but not selectable.
+	Interactable:
+	# Always visible, no special shroud logic here.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Decorations have sprites but do not use facing for them.
+	WithSpriteBody:
+	# Valid terrain types for decorations.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad
+	# Decorations are targetable by ground attacks.
+	Targetable:
+		TargetTypes: Indestructible
+	# Enforce neutral ownership.
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	# Put decorations in own category in map editor.
+	MapEditorData:
+		Categories: Decorations
+
+# Map decoration actors.
+^CoreDecoration:
+	Inherits@1: ^CoreIndestructible
+	Inherits@2: ^1x1Shape
+	# Decorations are targetable by ground attacks.
+	Targetable:
+		TargetTypes: Ground, NoAutoTarget

@@ -1,0 +1,207 @@
+lt_gen01:
+	Inherits: ^CoreIndestructible
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_gen02:
+	Inherits: ^CoreIndestructible
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_gen03:
+	Inherits: ^CoreIndestructible
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_gen04:
+	Inherits: ^CoreIndestructible
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+^StreetProp:
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+
+lt_sgn01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_sgn02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_sgn03:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_sgn04:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_eur01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+lt_eur02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+pole01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-telephonepole-name
+	RenderSprites:
+		Palette: terrain
+
+pole02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-telephonepole-name
+	RenderSprites:
+		Palette: terrain
+
+sign01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+sign02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+sign03:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+sign04:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+sign05:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+sign06:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+trff01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+trff02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+trff03:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+trff04:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+castrt01:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: actor-castrt01.name
+
+castrt02:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: actor-castrt02.name
+
+castrt03:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: actor-castrt03.name
+
+castrt04:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: actor-castrt04.name
+
+castrt05:
+	Inherits@1: ^CoreDecoration
+	Inherits@2: ^StreetProp
+	Tooltip:
+		Name: actor-castrt05.name

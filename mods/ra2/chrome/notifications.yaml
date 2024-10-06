@@ -1,0 +1,15 @@
+Sounds:
+	Notifications:
+		RadarUp: uradaron
+		RadarDown: uradarof
+		DisablePower: gpowof
+		EnablePower: gpowon
+		BuildPaletteOpen: uslide1
+		BuildPaletteClose: uslide2
+		TabClick: utab
+		ClickSound: bag|umenucl1
+			InterruptType: Overlap
+		ClickDisabledSound: ugamclos
+			InterruptType: Overlap
+		ChatLine: umessage
+			InterruptType: Interrupt

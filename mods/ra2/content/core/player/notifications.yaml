@@ -1,0 +1,40 @@
+Speech:
+	Notifications:
+		# PlaceBuilding notifications.
+		NewOptions: 049
+		BuildingCannotPlaceAudio: 063
+		# MissionObjectives notifications.
+		Win: 022
+		Lose: 023
+		Leave: 015
+		# PowerManager notifications.
+		LowPower: 053
+		# PlayerResources notifications.
+		InsufficientFunds: 050
+		# BaseAttackNotifier notifications.
+		OurAllyIsUnderAttack: 045
+		OurBaseIsUnderAttack: 054
+		BaseAttackWarning: ubase
+			VolumeModifier: 0.55
+		# HarvesterAttackNotifier notifications.
+		OreMinerUnderAttack: 037
+		# ProductionQueue notifications.
+		ConstructionComplete: 048
+		NoBuild: 047
+		BuildingInProgress: 047
+		Building: 052
+		OnHold: 056
+		Cancelled: 051
+		UnitReady: 062
+		Training: 066
+
+Sounds:
+	Notifications:
+		# PlaceBeacon sounds.
+		Beacon: ubeacon
+			InterruptType: Interrupt
+		# PlayerResources sounds.
+		CashTickUp: ucredup
+			InterruptType: Overlap
+		CashTickDown: ucreddn
+			InterruptType: Overlap

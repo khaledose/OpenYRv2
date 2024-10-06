@@ -1,0 +1,37 @@
+^SystemActor:
+	Immobile:
+		OccupiesSpace: false
+	BodyOrientation:
+	AlwaysVisible:
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	QuantizeFacingsFromSequence:
+	MapEditorData:
+		Categories: Misc - System
+
+^Ambient:
+	Inherits: ^SystemActor
+	-Immobile:
+	Aircraft:
+		CruiseAltitude: 0c1
+		VTOL: true
+	RejectsOrders:
+	Interactable:
+	# AmbientSound:
+	#	AudibleThroughFog: true
+	-MapEditorData:
+	RenderSpritesEditorOnly:
+		Image: ambient
+
+^ColorPicker:
+	Inherits: ^CoreVoxel
+	AlwaysVisible:
+	Mobile:
+		InitialFacing: 640
+		Locomotor: wheeled
+	WithVoxelBody:
+		ShowShadow: false
+	RenderSprites:
+		Palette: colorpicker
+	RenderVoxels:
+		Palette: colorpicker

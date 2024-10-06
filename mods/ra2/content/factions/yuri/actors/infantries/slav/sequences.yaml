@@ -1,0 +1,47 @@
+slav:
+	Inherits: ^DeathEffects
+	Defaults:
+		Filename: conqmd|slav.shp
+	icon:
+		Filename: cameo|xxicon.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 276
+	paradrop:
+		Length: 1
+		Start: 283
+	die1:
+		Length: 15
+		Start: 86
+	die2:
+		Length: 15
+		Start: 101
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+	full-run:
+		Facings: 8
+		Length: 6
+		Start: 228
+		Tick: 120
+	harvest:
+		Facings: 8
+		Length: 6
+		Start: 116
+		Tick: 120

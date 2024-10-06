@@ -1,0 +1,196 @@
+^CivilianVehicle:
+	Selectable:
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 10000
+	Armor:
+		Type: Light
+	Valued:
+		Cost: 0
+	DeliversCash:
+		Payload: 100
+		Voice: Move
+	Mobile:
+		Speed: 120
+	RevealsShroud:
+		Range: 8c0
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
+
+bus:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Inherits@3: ^TransportsInfantries
+	Mobile:
+		RequiresCondition: !notmobile
+	Cargo:
+		-LoadedCondition:
+	Tooltip:
+		Name: actor-bus.name
+
+limo:
+	Inherits: bus
+	Tooltip:
+		Name: actor-limo.name
+
+ddbx:
+	Inherits: bus
+	Tooltip:
+		Name: actor-ddbx.name
+
+pick:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-pick.name
+
+car:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-car.name
+
+wini:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-wini.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+propa:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-propa.name
+	Voiced:
+		VoiceSet: VehicleVoice
+
+cop:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cop.name
+	AmbientSound:
+		SoundFiles: vcoplo1.wav vcoplo2a.wav vcoplo2b.wav
+
+euroc:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-euroc.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+cona:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cona.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+trucka:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-trucka.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+truckb:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-truckb.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+suvb:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-suvb.name
+
+suvw:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-suvw.name
+
+stang:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-stang.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+ptruck:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ptruck.name
+
+taxi:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-taxi.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+ambu:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ambu.name
+
+bcab:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-bcab.name
+
+cblc:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cblc.name
+	Voiced:
+		VoiceSet: CableCarVoice
+
+doly:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-doly.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+ftrk:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ftrk.name
+
+jeep:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-jeep.name
+
+ycab:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ycab.name
+
+civp:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CivilianVehicle
+	Tooltip:
+		Name: actor-civp.name
+	Voiced:
+		VoiceSet: VehicleVoice

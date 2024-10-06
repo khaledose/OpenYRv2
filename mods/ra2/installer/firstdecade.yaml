@@ -1,0 +1,47 @@
+tfd: C&C The First Decade (English)
+	Type: Disc
+	Install:
+		# Red Alert 2 Files:
+		ContentPackage@ra2:
+			Name: ra2
+			Actions:
+				ExtractIscab: data1.hdr
+					Volumes:
+						7: data7.cab
+						8: data8.cab
+					Extract:
+						^SupportDir|Content/ra2/ra2.mix: Red Alert 2\RA2\ra2.mix
+						^SupportDir|Content/ra2/language.mix: Red Alert 2\RA2\language.mix
+		# Yuri's Revenge Files:
+		ContentPackage@yr:
+			Name: yr
+			Actions:
+				ExtractIscab: data1.hdr
+					Volumes:
+						7: data7.cab
+						8: data8.cab
+						9: data9.cab
+					Extract:
+						^SupportDir|Content/ra2/ra2md.mix: Yuri\RA2\ra2md.mix
+						^SupportDir|Content/ra2/langmd.mix: Yuri\RA2\langmd.mix
+		# Red Alert 2 Music (optional):
+		ContentPackage@ra2-music:
+			Name: ra2-music
+			Actions:
+				ExtractIscab: data1.hdr
+					Volumes:
+						7: data7.cab
+						8: data8.cab
+					Extract:
+						^SupportDir|Content/ra2/theme.mix: Red Alert 2\RA2\theme.mix
+		# Yuri's Revenge Music (optional):
+		ContentPackage@yr-music:
+			Name: yr-music
+			Actions:
+				ExtractIscab: data1.hdr
+					Volumes:
+						7: data7.cab
+						8: data8.cab
+						9: data9.cab
+					Extract:
+						^SupportDir|Content/ra2/thememd.mix: Yuri\RA2\thememd.mix

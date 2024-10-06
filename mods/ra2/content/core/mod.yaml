@@ -1,0 +1,18 @@
+Rules:
+	ra2|content/core/palette/rules.yaml
+	ra2|content/core/player/rules.yaml
+	ra2|content/core/world/rules.yaml
+
+Sequences:
+	ra2|content/core/world/sequences.yaml
+
+Notifications:
+	ra2|content/core/player/notifications.yaml
+	ra2|content/core/world/notifications.yaml
+
+Music:
+	ra2|content/core/world/music.yaml
+
+Translations:
+	ra2|content/core/player/languages/en.ftl
+	ra2|content/core/world/languages/en.ftl

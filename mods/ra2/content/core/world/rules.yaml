@@ -1,0 +1,216 @@
+# Shared world setup.
+^CoreWorld:
+	# Always render the world.
+	AlwaysVisible:
+	# Required for interaction between game window and input with the map.
+	ScreenMap:
+	# Allows for playing as a random faction.
+	Faction:
+		Name: faction-random.name
+		InternalName: Random
+		RandomFactionMembers: random-allies, random-soviets, psicorps
+		Side: Randoms
+		Description: faction-random.description
+	# Required to cache and query actors on the map.
+	ActorMap:
+	# Implement music playback to the game.
+	MusicPlaylist:
+		VictoryMusic: scorex
+		DefeatMusic: score
+		AllowMuteBackgroundMusic: true
+	# Required for UI to load.
+	LoadWidgetAtGameStart:
+	# Terrain rendering setup.
+	TerrainRenderer:
+	# Required to show the map grid.
+	TerrainGeometryOverlay:
+	# Allows terrain lighting post processing.
+	TerrainLighting:
+	# Applies day/night effects.
+	TintPostProcessEffect:
+		Ambient: 1.0
+		Red: 1.0
+		Green: 1.0
+		Blue: 1.0
+	# Shroud rendering setup.
+	ShroudRenderer:
+		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+		UseExtendedIndex: true
+		FogPalette: shroud
+		ShroudPalette: shroud
+	# Resources rendering setup.
+	ResourceRenderer:
+		ResourceTypes:
+			Ore:
+				Name: resource-ore
+				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+				Palette: resource
+			Gems:
+				Name: resource-gems
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				Palette: resource
+	# Loads voxel models.
+	VoxelCache:
+	# Renders voxel models.
+	ModelRenderer:
+	# Makes back-facing cliffs impassable.
+	CliffBackImpassabilityLayer:
+	# Required for debug overlays:
+	DebugVisualizations:
+	# Required for unit selection.
+	Selection:
+	# Required for control groups support.
+	ControlGroups:
+
+# Ingame specific world setup.
+World:
+	Inherits: ^CoreWorld
+	# Displays objectives panel for skirmish games.
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
+	# Required for chat commands.
+	ChatCommands:
+	HelpCommand:
+	PlayerCommands:
+	DevCommands:
+	DebugVisualizationCommands:
+	# Checks for pause related desyncs.
+	DebugPauseState:
+	# Required for script triggers debug overlays.
+	CellTriggerOverlay:
+	# Required for warhead debug overlays.
+	WarheadDebugOverlay:
+	# Required to display custom terrain types.
+	CustomTerrainDebugOverlay:
+	# Required for pathfinder debug overlays.
+	HierarchicalPathFinderOverlay:
+	# Required for exit debug overlays.
+	ExitsDebugOverlayManager:
+	# Required for buildable area checks.
+	BuildingInfluence:
+	# Pathfinding requirement.
+	PathFinder:
+	# Support for prespawned actors.
+	SpawnMapActors:
+	# Default game settings: gamespeed, techlevel, shortgame.
+	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 4
+		GameSpeedDropdownDisplayOrder: 2
+		TechLevel: techlevel.10
+	# Controls the build radius checkboxes in the lobby options.
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxDisplayOrder: 7
+	# Required for spawnpoint support.
+	MapStartingLocations:
+	# Required to setup the players in lobby.
+	CreateMapPlayers:
+	# Required to spawn player units at spawnpoint.
+	SpawnStartingUnits:
+		DropdownDisplayOrder: 1
+	# Allows setting a time limit on games.
+	TimeLimitManager:
+		TimeLimitDisplayOrder: 5
+		TimeLimitWarnings:
+			1: OneMinuteRemaining
+			2: TwoMinutesRemaining
+			3: ThreeMinutesRemaining
+			4: FourMinutesRemaining
+			5: FiveMinutesRemaining
+			10: TenMinutesRemaining
+			20: TwentyMinutesRemaining
+	# Required for the color picker.
+	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
+		PresetColors: 2973E7, FF1818, 4A145E
+		FactionPreviewActors:
+			random-soviets: smcv.colorpicker
+			random-psicorps: pcv.colorpicker
+			libya: smcv.colorpicker
+			cuba: smcv.colorpicker
+			iraq: smcv.colorpicker
+			russia: smcv.colorpicker
+			psicorps: pcv.colorpicker
+	# Play notification for game load/save
+	StartGameNotification:
+		Notification: StartGame
+		LoadedNotification:
+		SavedNotification:
+	# Cheat protection.
+	ValidateOrder:
+	# Used to manage beacons.
+	RadarPings:
+	# Select proper production tab when production building is selected
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	# Requirement for shaking the screen if a building explodes.
+	ScreenShaker:
+		MinMultiplier: -10,0
+		MaxMultiplier: 10,0
+	# Renders an effect at the order target locations.
+	OrderEffects:
+		TerrainFlashImage: moveflsh
+		TerrainFlashSequence: idle
+		TerrainFlashPalette: moveflash
+	# Allows harvesters to coordinate their operations.
+	ResourceClaimLayer:
+	# Manages resource layer on terrain types.
+	ResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+	# Plays animations on resources.
+	WithResourceAnimation:
+		Image: oreshimmering
+		Types: Ore, Gems
+		Ratio: 5
+		Interval: 50
+		Palette: effect
+	# Manages bridges on the map.
+	BridgesManager:
+	# Spawns crates periodically on random locations in the map.
+	CrateSpawner:
+		SpawnInterval: 100
+		WaterChance: 100
+		InitialSpawnDelay: 1
+	# Syncs deployment of deployable units.
+	SyncDeploy:
+
+# Map editor specific world setup.
+EditorWorld:
+	Inherits: ^CoreWorld
+	# Displays actors in editor.
+	EditorActorLayer:
+	# Cursor attached stuff.
+	EditorCursorLayer:
+	# Undo / Redo support.
+	EditorActionManager:
+	MarkerLayerOverlay:
+	# Displays where buildings can be build.
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Rough, Road, DirtRoad, Water
+		Palette: placefootprint
+	# # Manages resource layer on terrain types in the editor.
+	EditorResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12

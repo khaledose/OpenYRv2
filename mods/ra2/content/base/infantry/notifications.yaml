@@ -1,0 +1,4 @@
+Speech:
+	Notifications:
+		UnitLost: 064
+		UnitPromoted: 079

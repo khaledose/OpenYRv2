@@ -1,0 +1,35 @@
+Rules:
+	ra2|content/base/infantry/rules.yaml
+	ra2|content/base/misc/rules.yaml
+	ra2|content/base/naval/rules.yaml
+	ra2|content/base/shape/rules.yaml
+	ra2|content/base/shared/rules.yaml
+	ra2|content/base/structure/rules.yaml
+	ra2|content/base/vehicle/rules.yaml
+
+Sequences:
+	ra2|content/base/infantry/sequences.yaml
+	ra2|content/base/misc/sequences.yaml
+	ra2|content/base/shape/sequences.yaml
+	ra2|content/base/shared/sequences.yaml
+	ra2|content/base/weapon/sequences.yaml
+
+Weapons:
+	ra2|content/base/infantry/weapons.yaml
+	ra2|content/base/shared/weapons.yaml
+	ra2|content/base/weapon/weapons.yaml
+
+Voices:
+	ra2|content/base/infantry/voices.yaml
+
+Music:
+	ra2|content/base/audio/music.yaml
+
+Notifications:
+	ra2|content/base/audio/notifications.yaml
+	ra2|content/base/infantry/notifications.yaml
+	ra2|content/base/shared/notifications.yaml
+
+Translations:
+	ra2|content/base/shared/languages/en.ftl
+	ra2|content/base/vehicle/languages/en.ftl

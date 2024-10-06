@@ -1,0 +1,8 @@
+Speech:
+	Notifications:
+		FirepowerUpgraded: 068
+		UnitFirepowerUpgraded: 076
+		ArmorUpgraded: 067
+		UnitArmorUpgraded: 077
+		SpeedUpgraded: 069
+		UnitSpeedUpgraded: 078

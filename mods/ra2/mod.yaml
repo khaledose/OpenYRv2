@@ -1,0 +1,225 @@
+Metadata:
+	Title: Red Alert 2: Yuri's Revenge
+	Version: bleed
+	Website: https://github.com/khaledose/OpenYR
+	WebIcon32: https://www.openra.net/images/icons/ra_32x32.png
+	WindowTitle: OpenRA - Red Alert 2: Yuri's Revenge
+
+PackageFormats: Mix, AudioBag
+
+Packages:
+	~^SupportDir|Content/ra2
+	^EngineDir
+	^EngineDir|mods/common: common
+	$ra2: ra2
+	~ra2md.mix
+	~ra2.mix
+	~langmd.mix
+	~language.mix
+	~multi.mix
+	~audio.mix: audio
+	~audio|audio.bag: bag
+	~audiomd.mix: audiomd
+	~audiomd|audio.bag: bagmd
+	~cachemd.mix
+	~cache.mix: cache
+	~cameomd.mix: cameomd
+	~cameo.mix: cameo
+	~conquer.mix: conquer
+	~conqmd.mix: conqmd
+	~des.mix
+	~desert.mix
+	~genermd.mix
+	~generic.mix
+	~isodesmd.mix
+	~isodes.mix
+	~isogenmd.mix
+	~isogen.mix
+	~isolunmd.mix
+	~isolun.mix
+	~isosnomd.mix
+	~isosnow.mix
+	~isotemmd.mix
+	~isotemp.mix
+	~isoubnmd.mix
+	~isoubn.mix
+	~isourbmd.mix
+	~isourb.mix
+	~loadmd.mix
+	~load.mix
+	~localmd.mix: localmd
+	~local.mix: local
+	~lun.mix
+	~lunar.mix
+	~neutral.mix
+	~ntrlmd.mix
+	~sidec01.mix
+	~sidec02.mix
+	~sno.mix
+	~snowmd.mix
+	~snow.mix
+	~tem.mix
+	~temperat.mix
+	~theme.mix
+	~thememd.mix
+	~ubn.mix
+	~urbann.mix
+	~urb.mix
+	~urban.mix
+	ra2|content/assets
+	ra2|chrome/assets
+
+MapFolders:
+	ra2|maps: System
+	~^SupportDir|maps/ra2/bleed: User
+
+Assemblies:
+	^BinDir|OpenRA.Mods.Ra2.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.Common.dll
+
+AssetBrowser:
+	SpriteExtensions: .shp, .tem, .des, .sno, .urb, .ubn, .lun, .png
+	ModelExtensions: .vxl
+	AudioExtensions: .aud, .wav
+	VideoExtensions: .vqa
+
+SupportsMapsFrom: ra2
+
+LoadScreen: LogoStripeLoadScreen
+	Image: ra2|chrome/assets/loadscreen.png
+	Text: Loading.  ,Loading.. ,Loading...
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+MapGrid:
+	Type: RectangularIsometric
+	TileSize: 60,30
+	EnableDepthBuffer: True
+	MaximumTerrainHeight: 16
+	SubCellOffsets: 0,0,0, -512,0,0, 0,-512,0, 0,0,0, 512,0,0, 0,512,0
+	DefaultSubCell: 2
+
+SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+SoundFormats: Aud, Wav
+
+TerrainFormat: DefaultTerrain
+
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+
+DefaultOrderGenerator: UnitOrderGenerator
+
+GameSpeeds:
+	DefaultSpeed: fastest
+	Speeds:
+		slowest:
+			Name: options-game-speed.slowest
+			Timestep: 80
+			OrderLatency: 2
+		slower:
+			Name: options-game-speed.slower
+			Timestep: 50
+			OrderLatency: 3
+		default:
+			Name: options-game-speed.normal
+			Timestep: 40
+			OrderLatency: 3
+		fast:
+			Name: options-game-speed.fast
+			Timestep: 35
+			OrderLatency: 4
+		faster:
+			Name: options-game-speed.faster
+			Timestep: 30
+			OrderLatency: 4
+		fastest:
+			Name: options-game-speed.fastest
+			Timestep: 20
+			OrderLatency: 6
+
+ModContent:
+	InstallPromptMessage: Red Alert 2: Yuri's Revenge requires artwork and audio from the original game.
+	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install.
+	Packages:
+		ContentPackage@ra2:
+			Title: Red Alert 2 Files
+			Identifier: ra2
+			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
+			Sources: ra2, steam, origin, tfd
+			Required: true
+		ContentPackage@ra2-music:
+			Title: Red Alert 2 Music
+			Identifier: ra2-music
+			TestFiles: ^SupportDir|Content/ra2/theme.mix
+			Sources: ra2, steam, origin, tfd
+		ContentPackage@yr:
+			Title: Yuri's Revenge Files
+			Identifier: yr
+			TestFiles: ^SupportDir|Content/ra2/ra2md.mix, ^SupportDir|Content/ra2/langmd.mix
+			Sources: yr, steam, origin, tfd
+			Required: true
+		ContentPackage@yr-music:
+			Title: Yuri's Revenge Music
+			Identifier: yr-music
+			TestFiles: ^SupportDir|Content/ra2/thememd.mix
+			Sources: yr, steam, origin, tfd
+	Sources:
+		ra2|installer/ra2.yaml
+		ra2|installer/yr.yaml
+		ra2|installer/origin.yaml
+		ra2|installer/steam.yaml
+		ra2|installer/firstdecade.yaml
+
+Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size: 32
+		Ascender: 24
+
+Rules:
+	ra2|content/misc/rules.yaml
+
+Sequences:
+	ra2|content/misc/sequences.yaml
+
+Include: chrome/mod.yaml
+Include: content/base/mod.yaml
+Include: content/core/mod.yaml
+Include: content/factions/allied/mod.yaml
+Include: content/factions/neutral/mod.yaml
+Include: content/factions/soviet/mod.yaml
+Include: content/factions/yuri/mod.yaml
+Include: content/terrain/mod.yaml

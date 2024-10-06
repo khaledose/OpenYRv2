@@ -1,0 +1,6 @@
+smcv:
+	Inherits: ^CoreMCV
+	# Transforms:
+	# 	IntoActor: nacnst
+	Voiced:
+		VoiceSet: SovietConstructionVehicleVoice

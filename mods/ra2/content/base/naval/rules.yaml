@@ -1,0 +1,49 @@
+# Base for all vehicle actors.
+^CoreShip:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreVoxel
+	Inherits@3: ^RepairedByMechanic
+	# Ships can only move in water.
+	Mobile:
+		Locomotor: naval
+		TurnSpeed: 20
+		TerrainOrientationAdjustmentMargin: 256
+		Voice: Move
+	# This actor explodes when killed.
+	FireWarheadsOnDeath:
+		Weapon: VehicleExplosion
+		EmptyWeapon: VehicleExplosion
+	# Ships can be targeted by anything which attacks water.
+	Targetable:
+		TargetTypes: Water, Ship
+	# Condition to be granted to damaged ships.
+	GrantConditionOnDamageState:
+		Condition: heavy-damage
+		ValidDamageStates: Heavy, Critical
+	# Ships are 25% slower when they are heavily damaged.
+	SpeedMultiplier:
+		Modifier: 75
+		RequiresCondition: heavy-damage
+	# Ships smoke when they are heavily damaged.
+	FloatingSpriteEmitter:
+		Image: smoke
+		Sequences: small, large
+		Duration: -1
+		SpawnFrequency: 1
+		Lifetime: 10
+		RandomRate: 100
+		Gravity: 256
+		Offset: 0, 0, 1c0
+		RequiresCondition: heavy-damage
+	# Ship category in editor.
+	MapEditorData:
+		Categories: Unit - Ship
+
+# Add locomotor to world...
+^CoreWorld:
+	Locomotor@NAVAL:
+		Name: naval
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Water: 100

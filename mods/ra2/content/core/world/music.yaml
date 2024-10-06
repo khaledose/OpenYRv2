@@ -1,0 +1,9 @@
+score: Score
+	Filename: ra2-sco
+	Extension: wav
+	Hidden: true
+
+scorex: Score YR
+	Extension: wav
+	VolumeModifier: 1.2
+	Hidden: true

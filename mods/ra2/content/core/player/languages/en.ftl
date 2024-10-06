@@ -1,0 +1,23 @@
+notification-insufficient-funds = Insufficient funds.
+notification-new-construction-options = New construction options.
+notification-cannot-deploy-here = Cannot deploy here.
+notification-low-power = Low power.
+notification-base-under-attack = Our base is under attack.
+notification-ally-under-attack = Our ally is under attack.
+notification-ore-miner-under-attack = Ore miner under attack.
+notification-construction-complete = Construction complete.
+notification-unit-ready = Unit ready.
+notification-unable-to-build-more = Unable to build more.
+notification-unable-to-comply-building-in-progress = Unable to comply. Building in progress.
+
+options-tech-level =
+   .one = 1
+   .two = 2
+   .three = 3
+   .four = 4
+   .five = 5
+   .six = 6
+   .seven = 7
+   .eight = 8
+   .nine = 9
+   .ten = 10

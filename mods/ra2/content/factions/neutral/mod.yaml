@@ -1,0 +1,44 @@
+Rules:
+	ra2|content/factions/neutral/animals/rules.yaml
+	ra2|content/factions/neutral/infantries/rules.yaml
+	ra2|content/factions/neutral/decoration/explosive_props/rules.yaml
+	ra2|content/factions/neutral/decoration/props/rules.yaml
+	ra2|content/factions/neutral/decoration/street_props/rules.yaml
+	ra2|content/factions/neutral/navals/rules.yaml
+	ra2|content/factions/neutral/vehicles/rules.yaml
+
+Sequences:
+	ra2|content/factions/neutral/animals/sequences.yaml
+	ra2|content/factions/neutral/infantries/sequences.yaml
+	ra2|content/factions/neutral/decoration/explosive_props/sequences.yaml
+	ra2|content/factions/neutral/decoration/props/sequences.yaml
+	ra2|content/factions/neutral/decoration/street_props/sequences.yaml
+	ra2|content/factions/neutral/navals/sequences.yaml
+	ra2|content/factions/neutral/vehicles/sequences.yaml
+
+ModelSequences:
+	ra2|content/factions/neutral/navals/voxels.yaml
+	ra2|content/factions/neutral/vehicles/voxels.yaml
+
+Weapons:
+	ra2|content/factions/neutral/animals/weapons.yaml
+	ra2|content/factions/neutral/infantries/weapons.yaml
+	ra2|content/factions/neutral/decoration/explosive_props/weapons.yaml
+
+Voices:
+	ra2|content/factions/neutral/animals/voices.yaml
+	ra2|content/factions/neutral/infantries/voices.yaml
+	ra2|content/factions/neutral/navals/voices.yaml
+	ra2|content/factions/neutral/vehicles/voices.yaml
+
+Notifications:
+	ra2|content/factions/neutral/infantries/notifications.yaml
+
+Translations:
+	ra2|content/factions/neutral/animals/languages/en.ftl
+	ra2|content/factions/neutral/decoration/explosive_props/languages/en.ftl
+	ra2|content/factions/neutral/decoration/props/languages/en.ftl
+	ra2|content/factions/neutral/decoration/street_props/languages/en.ftl
+	ra2|content/factions/neutral/infantries/languages/en.ftl
+	ra2|content/factions/neutral/navals/languages/en.ftl
+	ra2|content/factions/neutral/vehicles/languages/en.ftl

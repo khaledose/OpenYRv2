@@ -1,0 +1,2 @@
+actor-slav =
+   .name = Slave

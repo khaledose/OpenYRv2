@@ -1,0 +1,701 @@
+eins:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conqmd|eins.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 133
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 118
+	die2:
+		Length: 15
+		Start: 118
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 8
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-stand:
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
+		Facings: 8
+
+vladimir:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|vladimir.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 260
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 276
+		Length: 2
+		Facings: 2
+
+rmnv:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conqmd|rmnv.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 196
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	liedown:
+		Start: 164
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 180
+		Length: 2
+		Facings: 2
+
+mumy:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: conqmd|mumy.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+
+pentgen:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|pentgen.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	liedown:
+		Facings: 2
+		Length: 2
+		Start: 198
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 214
+	prone-stand:
+		Facings: 8
+		Length: 1
+		Start: 134
+	standup:
+		Facings: 2
+		Length: 2
+		Start: 182
+
+ssrv:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|ssrv.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 182
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 86
+
+###############################################
+
+arnd:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conqmd|arnd.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	paradrop:
+		Length: 1
+		Start: 292
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 260
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 276
+		Length: 2
+		Facings: 2
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+
+stln:
+	Inherits: arnd
+	Defaults:
+		Filename: conqmd|stln.shp
+
+###############################################
+
+pres:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|pres.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 86
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-stand:
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
+		Facings: 8
+
+civbbp:
+	Inherits: pres
+	Defaults:
+		Filename: conquer|civbbp.shp
+
+civbf:
+	Inherits: pres
+	Defaults:
+		Filename: conquer|civbf.shp
+
+civbfm:
+	Inherits: pres
+	Defaults:
+		Filename: conquer|civbfm.shp
+
+civbtm:
+	Inherits: pres
+	Defaults:
+		Filename: conquer|civbtm.shp
+
+###############################################
+
+civsf:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|civsf.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 182
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 86
+
+civsfm:
+	Inherits: civsf
+	Defaults:
+		Filename: conquer|civsfm.shp
+
+civstm:
+	Inherits: civsf
+	Defaults:
+		Filename: conquer|civstm.shp
+
+###############################################
+
+civ1:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|civ1.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 230
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 182
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+		Facings: 8
+
+civ2:
+	Inherits: civ1
+	Defaults:
+		Filename: conquer|civ2.shp
+
+civ3:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|civ3.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 228
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 13
+		Start: 71
+	die2:
+		Length: 13
+		Start: 71
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 132
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 180
+	prone-stand:
+		Facings: 8
+		Length: 1
+		Start: 182
+	shoot:
+		Facings: 8
+		Length: 6
+		Start: 84
+
+###############################################
+
+civa:
+	Inherits@1: ^NoIcon
+	Inherits@2: ^DeathEffects
+	Defaults:
+		Filename: conquer|civa.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 182
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 86
+
+civb:
+	Inherits: civa
+	Defaults:
+		Filename: conquer|civb.shp
+
+civc:
+	Inherits: civa
+	Defaults:
+		Filename: conquer|civc.shp
+
+lunr:
+	Inherits: ^DeathEffects
+	Defaults:
+		Filename: conqmd|lunr.shp
+	icon:
+		Filename: cameomd|lunricon.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 419
+	paradrop:
+		Length: 1
+		Start: 418
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+
+engineer:
+	Inherits: ^DeathEffects
+	Defaults:
+		Filename: conquer|engineer.shp
+	icon:
+		Filename: cameo|engnicon.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 245
+	paradrop:
+		Length: 1
+		Start: 244
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 212
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 228
+		Length: 2
+		Facings: 2

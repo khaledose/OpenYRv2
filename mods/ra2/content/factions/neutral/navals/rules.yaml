@@ -1,0 +1,43 @@
+tug:
+	Inherits: ^CoreShip
+	Health:
+		HP: 20000
+	Armor:
+		Type: Light
+	Valued:
+		Cost: 0
+	Mobile:
+		Speed: 60
+		TurnSpeed: 8
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-tug.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelBody:
+	AmbientSound:
+		SoundFiles: gtugboaa.wav, gtugboab.wav
+		Interval: 300, 600
+	Voiced:
+		VoiceSet: TugVoice
+
+cruise:
+	Inherits: ^CoreShip
+	Health:
+		HP: 30000
+	Armor:
+		Type: Light
+	Valued:
+		Cost: 0
+	Mobile:
+		Speed: 60
+		TurnSpeed: 4
+	Tooltip:
+		Name: actor-cruise.name
+	WithVoxelBody:
+	AmbientSound:
+		SoundFiles: gship1a
+		Interval: 500, 1000
+	Voiced:
+		VoiceSet: CruiseVoice

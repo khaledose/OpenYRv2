@@ -1,0 +1,242 @@
+# Shared player setup.
+^CorePlayer:
+	# This actor is not affected by shroud or fog.
+	AlwaysVisible:
+	# Enable shroud and fog.
+	Shroud:
+	# Resources
+	PlayerResources:
+		ResourceValues:
+			Ore: 25
+			Gems: 50
+
+Player:
+	Inherits: ^CorePlayer
+	# Developer debug menu.
+	DeveloperMode:
+		CheckboxVisible: false
+		CheckboxEnabled: true
+		Cash: 100000
+		FastBuild: true
+		FastCharge: true
+		DisableShroud: true
+		UnlimitedPower: true
+		BuildAnywhere: true
+	# Allow players to place building.
+	PlaceBuilding:
+		NewOptionsNotification: NewOptions
+		NewOptionsTextNotification: notification-new-construction-options
+		CannotPlaceNotification: BuildingCannotPlaceAudio
+		CannotPlaceTextNotification: notification-cannot-deploy-here
+	# Enable mission objectives, required to win or loose mission.
+	MissionObjectives:
+		WinNotification: Win
+		LoseNotification: Lose
+		LeaveNotification: Leave
+	# Default objective: Win by killing all enemies.
+	ConquestVictoryConditions:
+	# Required for FrozenUnderFog to work
+	FrozenActorLayer:
+	# Allows placing a beacon.
+	PlaceBeacon:
+		BeaconSequence: idle
+		ArrowSequence:
+		CircleSequence:
+	# Player always has access to radar
+	ProvidesRadar:
+	# Render terrain on Radar widget (minimap).
+	PlayerRadarTerrain:
+	# Manage power for buildings
+	PowerManager:
+		SpeechNotification: LowPower
+		TextNotification: notification-low-power
+	# Player can repair own and ally buildings.
+	AllyRepair:
+	# Player resources
+	PlayerResources:
+		DefaultCash: 100000
+		SelectableCash: 10000, 20000, 50000, 100000
+		CashTickUpNotification: CashTickUp
+		CashTickDownNotification: CashTickDown
+		InsufficientFundsNotification: InsufficientFunds
+		InsufficientFundsTextNotification: notification-insufficient-funds
+	# Notifications
+	BaseAttackNotifier@1:
+		Notification: OurBaseIsUnderAttack
+		TextNotification: notification-base-under-attack
+		AllyNotification: OurAllyIsUnderAttack
+		AllyTextNotification: notification-ally-under-attack
+	BaseAttackNotifier@2:
+		NotifyInterval: 10000
+		Notification: BaseAttackWarning
+		AllyNotification: BaseAttackWarning
+	HarvesterAttackNotifier:
+		Notification: OreMinerUnderAttack
+		TextNotification: notification-ore-miner-under-attack
+	# Tech
+	TechTree:
+	# Collects observer stats.
+	PlayerStatistics:
+	# Collects player experience based on units killed.
+	PlayerExperience: # TODO: Update trait to work with new Veterancy logic.
+	# Enables support powers such as Plasma Blast.
+	SupportPowerManager:
+	# Manages saved games.
+	GameSaveViewportManager:
+	# Manages conditions granted on provided prerequisites.
+	GrantConditionOnPrerequisiteManager:
+	# Adds decoration to production icons based on actor veterancy.
+	ProductionIconOverlayManager@veteran: # TODO: Update trait to work with new Veterancy logic.
+		Type: chevron-veteran
+		Image: veterancy-pips
+		Sequence: veteran
+		Palette: pips
+	ProductionIconOverlayManager@elite:
+		Type: chevron-elite
+		Image: veterancy-pips
+		Sequence: elite
+		Palette: pips
+	# Manages shroud visibility in-game.
+	Shroud:
+	# Available tech prerequisites.
+	ProvidesTechPrerequisite@1:
+		Id: techlevel.1
+		Name: options-tech-level.one
+		Prerequisites: techlevel.1
+	ProvidesTechPrerequisite@2:
+		Id: techlevel.2
+		Name: options-tech-level.two
+		Prerequisites: techlevel.1, techlevel.2
+	ProvidesTechPrerequisite@3:
+		Id: techlevel.3
+		Name: options-tech-level.three
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3
+	ProvidesTechPrerequisite@4:
+		Id: techlevel.4
+		Name: options-tech-level.four
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4
+	ProvidesTechPrerequisite@5:
+		Id: techlevel.5
+		Name: options-tech-level.five
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5
+	ProvidesTechPrerequisite@6:
+		Id: techlevel.6
+		Name: options-tech-level.six
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6
+	ProvidesTechPrerequisite@7:
+		Id: techlevel.7
+		Name: options-tech-level.seven
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7
+	ProvidesTechPrerequisite@8:
+		Id: techlevel.8
+		Name: options-tech-level.eight
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8
+	ProvidesTechPrerequisite@9:
+		Id: techlevel.9
+		Name: options-tech-level.nine
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8, techlevel.9,
+	ProvidesTechPrerequisite@10:
+		Id: techlevel.10
+		Name: options-tech-level.ten
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8, techlevel.9, techlevel.10
+	ClassicProductionQueue@Building:
+		Type: Building
+		Group: Building
+		DisplayOrder: 1
+		LowPowerModifier: 200
+		ReadyAudio: ConstructionComplete
+		ReadyTextNotification: notification-construction-complete
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Support:
+		Type: Support
+		Group: Support
+		DisplayOrder: 2
+		LowPowerModifier: 200
+		ReadyAudio: ConstructionComplete
+		ReadyTextNotification: notification-construction-complete
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Infantry:
+		Type: Infantry
+		Group: Infantry
+		DisplayOrder: 3
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Vehicle:
+		Type: Vehicle
+		Group: Vehicle
+		DisplayOrder: 4
+		BuildDurationModifier: 100
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Aircraft:
+		Type: Aircraft
+		Group: Aircraft
+		DisplayOrder: 5
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Ship:
+		Type: Ship
+		Group: Ship
+		DisplayOrder: 6
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+
+# Map editor specific player setup.
+EditorPlayer:
+	Inherits: ^CorePlayer

@@ -1,0 +1,6 @@
+pcv:
+	Inherits: ^CoreMCV
+	# Transforms:
+	# 	IntoActor: yacnst
+	Voiced:
+		VoiceSet: YuriConstructionVehicleVoice

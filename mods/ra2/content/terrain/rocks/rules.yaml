@@ -1,0 +1,80 @@
+^CoreRock:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^CoreSprite
+	Inherits@3: ^1x1Shape
+	Interactable:
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	Health:
+		HP: 5000
+	Armor:
+		Type: Wood
+	Building:
+		TerrainTypes: Clear, Rough
+	Tooltip:
+		Name: meta-rock-name
+	Targetable:
+		TargetTypes: Ground, Rock
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	RadarColorFromTerrain:
+		Terrain: Rock
+	AppearsOnMapPreview:
+		Terrain: Rock
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	MapEditorData:
+		Categories: Rocks
+
+srock01:
+	Inherits: ^CoreRock
+
+srock02:
+	Inherits: ^CoreRock
+
+srock03:
+	Inherits: ^CoreRock
+
+srock04:
+	Inherits: ^CoreRock
+
+srock05:
+	Inherits: ^CoreRock
+
+trock01:
+	Inherits: ^CoreRock
+
+trock02:
+	Inherits: ^CoreRock
+
+trock03:
+	Inherits: ^CoreRock
+
+trock04:
+	Inherits: ^CoreRock
+
+trock05:
+	Inherits: ^CoreRock
+
+lunrk1:
+	Inherits: ^CoreRock
+	RenderSprites:
+		Palette: player
+	MapEditorData:
+		RequireTilesets: LUNAR
+
+lunrk2:
+	Inherits: lunrk1
+
+lunrk3:
+	Inherits: lunrk1
+
+lunrk4:
+	Inherits: lunrk1
+
+lunrk5:
+	Inherits: lunrk1
+
+lunrk6:
+	Inherits: lunrk1

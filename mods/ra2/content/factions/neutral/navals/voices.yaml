@@ -1,0 +1,14 @@
+TugVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gtugboaa gtugboab
+		Move:
+		Die: gnavsina
+
+CruiseVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gship1a
+		Move:
+		Die: gnavsina
+

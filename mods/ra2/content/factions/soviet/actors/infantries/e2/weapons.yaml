@@ -1,0 +1,55 @@
+M1Carbine:
+	Inherits: ^MachineGun
+	ReloadDelay: 25
+	Range: 4c0
+	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 1500
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, NonTemporal
+
+M1CarbineE:
+	Inherits: M1Carbine
+	Range: 5c0
+	Warhead@1Dam: TargetDamage
+		Damage: 2000
+
+UCM1Carbine:
+	Inherits: ^MachineGun
+	ReloadDelay: 20
+	Range: 6c0
+	Report: baocatta.wav, baocattb.wav, baocattc.wav
+	Projectile: InstantHit
+		Blockable: false
+	Warhead@1Dam: TargetDamage
+		Damage: 2000
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 80
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 30
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, NonTemporal
+
+UCM1CarbineE:
+	Inherits: UCM1Carbine
+	Range: 7c0
+	Warhead@1Dam: TargetDamage
+		Damage: 3000

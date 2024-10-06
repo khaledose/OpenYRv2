@@ -1,0 +1,60 @@
+init:
+	Inherits: ^DeathEffects
+	Defaults:
+		Filename: conqmd|init.shp
+	icon:
+		Filename: cameomd|initicon.shp
+	muzzle:
+		Filename: conqmd|ucinit.shp
+		Length: *
+		Tick: 60
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 20
+		Tick: 120
+	cheer:
+		Length: 8
+		Start: 201
+	paradrop:
+		Length: 1
+		Start: 305
+	die1:
+		Length: 15
+		Start: 139
+	die2:
+		Length: 15
+		Start: 154
+	shoot:
+		Start: 209
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 169
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 91, 97, 103, 109, 115, 121, 127, 133
+		Facings: 8
+	prone-run:
+		Start: 91
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 185
+		Length: 2
+		Facings: 2
+	prone-shoot:
+		Start: 257
+		Length: 6
+		Facings: 8

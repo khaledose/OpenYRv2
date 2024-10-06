@@ -1,0 +1,22 @@
+Shovel:
+	Inherits: ^MachineGun
+	ReloadDelay: 30
+	Range: 1c512
+	Report: isl1atta.wav
+	ValidTargets: Ground
+	Warhead@1Dam: TargetDamage
+		Damage: 3000
+		ValidTargets: Ground
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone80Percent, TriggerProne, BulletDeath, NonTemporal
